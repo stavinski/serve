@@ -46,7 +46,7 @@ func usage() {
 ADDR: Binding address to use, can be just the port (:8000), or the IP/hostname and the port (127.0.0.1:8000) to restrict only localhost. 
 	
 OPTIONS:
-  -d, --dir		Directory to serve files from, defaults to the cwd
+  -d, --dir		Directory to serve files from, defaults to the cwd. (WARNING: could lead to data exposure, recommended to use a new scratch directory)
   -s, --secure	Use HTTPS. Requires cert and key pair be provided
   -c, --cert	Certificate file to use in PEM format
   -k, --key		Key file to use in PEM format
